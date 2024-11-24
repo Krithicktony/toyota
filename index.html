@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.sass">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  .slick-prev:before, .slick-next:before {
+    color: black;
+}
+</style>
+<body>
+  <nav>
+    <div class="navleft">
+      <ul>
+        <li><a href=""><img class="toyota" src="image/toyota-logo-main-136x24.svg" alt=""></a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">Virtual Showroom</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">T-Care</a></li>
+        <li><a href="">Used Cars</a></li>
+        <li><a href="">Mobility</a></li>
+        <li><a href="">Media</a></li>
+        <li><a href="">Toyoto in india</a></li>
+        <li><a href="">More</a></li>
+
+      </ul>
+    </div>
+    <div class="navright">
+      <ul>
+        <li><a class="phone" href=""><i class="fa fa-phone"></i></a></li>
+        <li onclick=showslider() ><a class="onclick" href=""><svg xmlns="http://www.w3.org/2000/svg"  height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        <li><a class="onclick" href=""><img src="image/toyota-logo-main-136x24.svg" alt=""></a></li>
+      </ul>
+    </div>
+  </nav>
+    <div class="slider0">
+      <ul>
+        <li onclick=showhide()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">Virtual Showroom</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">T-Care</a></li>
+        <li><a href="">Used Cars</a></li>
+        <li><a href="">Mobility</a></li>
+        <li><a href="">Media</a></li>
+        <li><a href="">Toyoto in india</a></li>
+        <li><a href="">More</a></li>  
+      </ul>
+    </div>
+    
+    <section class="slider">
+      <div class="slideritem active">       
+        <img class="" src="image/year-end-celebrations-1920x807 1.jpg" alt="">
+      </div>
+      <div class="slideritem">
+        <img class="" src="image/urban-cruiser-taisor-homepage-banner-1920x807 2.jpg" alt="">
+      </div>
+      <div class="slideritem">
+        <img class="" src="image/proud-to-toyota-owners-1920x807 3.jpg" alt="">
+      </div>
+      <div class="sliderbtn">
+        <button class="prev"><i class="fa fa-angle-left"></i></button>
+        <button class="next"><i class="fa fa-angle-right"></i></button>
+
+      </div>
+    </section>
+<!--  -->
+    <section class="two">
+      <div class="dealer">
+        <a href=""><i class="fa fa-map-marker" aria-hidden="true" > Find a dealer</i></a>
+       </div>
+       <span>|</span>
+       <div class="dealer">
+        <a href=""><i class="fa fa-car" aria-hidden="true"> Test Drive</i></a>
+       </div>
+       <span>|</span>
+       <div class="dealer">
+        <a href=""><i class="fa fa-money" aria-hidden="true" > Price List</i></a>
+       </div>
+       <span>|</span>
+       <div class="dealer">
+        <a href=""><i class='fa fa-book'> eBook</i></a>
+       </div>
+       <span>|</span>
+       <div class="dealer">
+        <a href=""><i class="fa fa-map	" aria-hidden="true" > Brochure</i></a>
+       </div>
+       <span>|</span>
+       <div class="dealer">
+        <a href=""><i class="fa fa-exchange" aria-hidden="true"> Exchange Car</i></a>
+       </div>
+    </section>
+<!--  -->
+
+<!--  -->
+    <section class="three">
+      <img src="image/virtual-showroom-1920x807 sec3.jpg" alt="">
+      <h2> Discover the Toyota range</h2>
+    </section>
+<!--  -->
+
+<!-- cars -->
+     <section class="four">
+        <div class="brand">
+          <img src="image/glanza.jpg" alt="">
+          <h2>Glanza</h2>
+          <p>From INR 6,86,000</p>
+        </div>
+        <div class="brand">
+          <img src="image/taisor.jpg" alt="">
+          <h2>Urban Cruiser taisor</h2>
+          <p>From INR 7,73,000</p>
+        </div>
+        <div class="brand">
+          <img src="image/rumion-whats-awesome-547x306.jpg" alt="">
+          <h2>Rumion</h2>
+          <p>From INR 10,44,000</p>
+        </div>
+        <div class="brand">
+          <img src="image/hyryder.jpg" alt="">
+          <h2>Urban Cruiser Hyryder</h2>
+          <p>From INR 11,14,000</p>
+        </div>
+        <div class="brand">
+          <img src="image/innova-hycross-whats-awesome-547x306.jpg" alt="">
+          <h2>Innova crysta</h2>
+        </div>
+        <div class="brand">
+          <img src="image/innova-hycross-whats-awesome-547x306.jpg" alt="">
+          <h2>Innova Hycross</h2>
+          <p>From INR 19,00,000</p>
+        </div>
+        <div class="brand">
+          <img src="image/hilux-asm-547x306.jpg" alt="">
+          <h2>Hilux</h2>
+          <p>From INR 30,40,000</p>
+        </div>
+        <div class="brand">
+          <img src="image/lc300-.jpg" alt="">
+          <h2>Fortuner</h2>
+        </div>
+        <div class="brand">
+          <img src="image/lc300-.jpg" alt="">
+          <h2>Legender</h2>
+          <p>From INR 44,40,000</p>
+        </div>
+        <div class="brand">
+          <img src="image/lc300-.jpg" alt="">
+          <h2>Camry</h2>
+          <p>From INR 44,40,000</p>
+        </div>
+        <div class="brand">
+          <img src="image/lc300-.jpg" alt="">
+          <h2>Vellfire</h2>
+          <p>From INR 1,22,30,00</p>
+        </div>
+        <div class="brand">
+          <img src="image/lc300-.jpg" alt="">
+          <h2>Land Cruiser 300</h2>
+          <p>From INR 2,10,00,00</p>
+        </div>
+     </section>
+<!-- cars end -->
+     
+    <div class="Awesome">
+      <h2>What's Awesome</h2>
+     </div>
+
+<!-- Slider awe -->
+    <section id="slider14" class="container mt-3 ">
+      <div class="row responsive">
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/taisor.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Urban Cruiser Taisor</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/TSecure KV Final (1)-1728298224.webp" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Tsecure</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/TG.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">TGloss</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/become-dealer-multi-with-all-models-547x306.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Become Dealer</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/lc300-.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">LC 300</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/rumion-whats-awesome-547x306 (1).jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Rumion</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/seamless-conversisons-547x306.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mobility Solution</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/t-web-whats-awesome-547x306.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Tweb</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/innova-hycross-whats-awesome-547x306.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Innova Hycross</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/hyryder.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Urban Cruiser Hyryder</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/glanza.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Glanza</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/hilux-asm-547x306.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Hilux</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/camry-asm-547x306.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">New Camry</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/innova-crysta-emi-banner-547x306.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Apply For Loan</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/hybrid-technology-547x306.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Hybrid Technology</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/online-booking-547x306.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Online Booking</h5>
+              <a href="#" class="knowmore">Know more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Slider awe end-->
+
+<!-- slider last -->
+    <section id="slider15" class="container mt-3 ">
+      <div class="row responsive">
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/my-dream-my-toyota-547x306.jpg" alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/the-great-4x4-expedition-547x306.jpg" alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/delivery-lead-time-547x306.jpg" alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/happy-customers-547x306.jpg" alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/toyota-environment-400x240.jpg" alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/airbag-recall-400x240.jpg" alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/more-from-toyota-driving-school-400x240.jpg" alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/more-from-toyota-finacial-services-400x240.jpg" alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/more-from-toyota-social-400x240.jpg" alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="image/more-from-toyota-wbp-400x240.jpg" alt="Card image cap">
+          </div>
+        </div>
+        
+  
+      </div>
+    </section>
+<!-- slider last end -->
+
+<!-- contact -->
+<section class="end">
+  <div class="contact">
+    <a href="">contact</a>
+    <span>|</span>
+    <a href="">Search</a>
+    <span>|</span>
+    <a href="">Announcement</a>
+    <span>|</span>
+    <a href="">Legal Notice</a>
+    <span>|</span>
+    <a href="">Help</a>
+    <span>|</span>
+    <a href="">Site map</a>
+    <hr>
+  </div>        
+
+  <div class="contactt">
+    <div class="text">
+      <div class="list">
+        <ul>
+        <h2>Top Sections</h2>
+        <li><a href="">Price List</a>
+        <li><a href="">eBook</a></li>
+        <li><a href="">Find a Dealer</a></li>
+        <li><a href="">Test Drive</a></li>
+        <li><a href="">Brochure</a></li>
+        <li><a href="">Exchange</a></li></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="text">
+      <div class="list">
+        <ul>
+        <h2>QUICK LINKS</h2>
+        <li><a href="">About Us</a>
+        <li><a href="">Feedback/Queries</a></li>
+        <li><a href="">Buy Accessories</a></li>
+        <li><a href="">online</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="text">
+      <div class="list">
+        <ul>
+        <h2>Media</h2>
+        <li><a href="">Press Release</a>
+        <li><a href="">Articles/Reviews</a></li>
+        <li><a href="">Spokespersons Images</a></li>
+        </ul>
+      </div>
+    </div>
+   
+    <div class="apps">
+      <h2>Follow toyota</h2>
+      <a href=""><i class="fa fa-twitter"></i></a>
+      <a href=""><i class="fa fa-facebook"></i></a>
+      <a href=""><i class="fa fa-youtube"></i></a>
+      <a href=""><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="llogo">
+      <h1><a href="">TOYOTA</a></h1>
+      <p>© 2000-2024 Toyota Kirloskar Motor. All Rights Reserved.</p>
+    </div>
+  </div>
+
+</section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/main.js"></script>
+  <Script src="js/jquery.min.js"></Script>
+
+</body>
+</html>
